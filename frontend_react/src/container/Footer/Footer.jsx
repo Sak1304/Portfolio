@@ -89,8 +89,10 @@ const Footer = () => {
   )
 }
 
-export default AppWrap(
+const WrappedFooter = AppWrap(
   MotionWrap(Footer, "app__footer"),
   "contact",
   "app__whitebg"
 );
+
+export default WrappedFooter;

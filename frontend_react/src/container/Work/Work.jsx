@@ -108,8 +108,10 @@ const Work = () => {
   )
 }
 
-export default AppWrap(
-  MotionWrap(Work,'app__works'),
+const WrappedWork = AppWrap(
+  MotionWrap(Work, 'app__works'),
   'work',
   "app__primarybg"
 );
+
+export default WrappedWork;
